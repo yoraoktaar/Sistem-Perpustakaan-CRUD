@@ -2,7 +2,6 @@
 Tugas Kulyah
 
 
-Sistem Manajemen Perpustakaan with Java
 ## 🐻‍❄️ Daftar File
 Sistem ini terdiri dari 6 file Java terpisah:
 1. Book.java
