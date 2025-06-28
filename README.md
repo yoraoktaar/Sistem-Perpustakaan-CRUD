@@ -13,26 +13,17 @@ Sistem ini terdiri dari 6 file Java terpisah:
 
 ## 🤍Cara Kompilasi dan Menjalankan
 Opsi 1: Kompilasi Semua File Sekaligus
-bashjavac *.java
+javac *.java
 java LibraryManagementSystem
 
 Opsi 2: Kompilasi File per File
-bashjavac Book.java
+javac Book.java
 javac User.java
 javac Admin.java
 javac Member.java
 javac LibrarySystem.java
 javac LibraryManagementSystem.java
 java LibraryManagementSystem
-
-## 💮Akun Default
-Role:
-1. Admin
-Username: admin
-Password: admin123
-2. Member
-Username: member
-Password: member123
 
 ## 🕊️Fitur Sistem
 1. Tambah buku baru
@@ -51,18 +42,18 @@ Password: member123
 
 ## 🐏Konsep OOP yang Diimplementasikan
 1. Inheritance (Pewarisan)
-javaUser (Parent Class)
-├── Admin (Child Class)
-└── Member (Child Class)
+User (abstract class)
+├── Admin (subclass)
+└── Member (subclass)
 
 3. Polymorphism
-Method showMenu() dan interact() memiliki implementasi berbeda di Admin dan Member
-Runtime akan memanggil method sesuai tipe object yang sebenarnya
+- Method showMenu() dan interact() memiliki implementasi berbeda di Admin dan Member.
+- Runtime akan memanggil method sesuai tipe object yang sebenarnya.
 
 3. Encapsulation
-Semua atribut menggunakan private modifier
-Akses melalui getter/setter methods
+- Semua atribut bersifat private.
+- Akses data menggunakan getter dan setter.
 
 4. Abstraction
-Class User sebagai abstract class
-Abstract methods: showMenu() dan interact()
+- User adalah kelas abstrak.
+- Method abstrak: showMenu() dan interact() harus diimplementasikan oleh subclass.
